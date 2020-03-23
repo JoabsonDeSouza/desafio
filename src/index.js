@@ -8,6 +8,7 @@ import store from './store';
 
 import Routes from '~/routes';
 
+console.disableYellowBox = true;
 const App = () => (
   <Provider store={store}>
     <StatusBar barStyle="light-content" />
