@@ -18,8 +18,6 @@ import {
   InputSearch,
 } from './styles';
 
-import logoHeader from '~./assets/logo.png';
-
 export default function Main(props) {
   const [filmsTrending, setFilmsTrending] = useState();
   const [films, setFilms] = useState();
@@ -108,7 +106,12 @@ export default function Main(props) {
           <ContainerIconHeader>
             <Ikon name="ios-menu" color="#FFF" />
           </ContainerIconHeader>
-          <ImageHeader source={logoHeader} />
+          <ImageHeader
+            source={{
+              uri:
+                'https://fontmeme.com/permalink/200706/9ca19ccfcea64256734d1ddcae58a9ce.png',
+            }}
+          />
           <ContainerIconHeader>
             <Ikon
               name="ios-search"

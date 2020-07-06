@@ -4,6 +4,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import Splash from '~/pages/Splash';
 import Main from '~/pages/Main';
 import Details from '~/pages/Details';
+import Login from '~/pages/Login';
 
 const navigationOptions = {
   headerShown: false,
@@ -11,6 +12,10 @@ const navigationOptions = {
 };
 
 const AppNavigator = createStackNavigator({
+  Login: {
+    screen: Login,
+    navigationOptions,
+  },
   Main: {
     screen: Main,
     navigationOptions,

@@ -14,7 +14,26 @@ export const Title = styled.Text`
   font-weight: bold;
 `;
 
-export const Logo = styled.Image`
-  width: 300px;
-  height: 150px;
+export const Logo = styled.Image.attrs({
+  resizeMode: 'stretch',
+})`
+  margin-top: -30%;
+  width: 60%;
+  height: 10%;
+`;
+
+export const SubLogo = styled.Image.attrs({
+  resizeMode: 'stretch',
+})`
+  width: 40%;
+  height: 30px;
+`;
+
+export const BackgroundImage = styled.Image.attrs({
+  resizeMode: 'stretch',
+})`
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  bottom: 0px;
 `;
